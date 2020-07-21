@@ -4,43 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Landing Page</title>
+    <title>Product Landing Page: Book House</title>
     <script src="script.js"></script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@900&family=Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header id="header">
-        <img src="" alt="" id="header-img">
+        <img id="header-img" src="https://i.imgur.com/EfanhPr.png" alt="">
 
         <nav id="nav-bar">
-            <a href="" class="nav-link">Link 1</a>
-            <a href="" class="nav-link">Link 2</a>
-            <a href="" class="nav-link">Link 3</a>
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#video" class="nav-link">How It Works</a>
+            <a href="#prices" class="nav-link">Pricing</a>
         </nav>
     </header>
-    <div>
-        <section>
+    <div id="content">
+        <section id="subscribe">
+            <h1 id="form-title">A new away to read.</h1>
             <form action="" id="form">
                 <input type="email" id="email" name="email" placeholder="Enter your email address">
-                <button id="submit">Submit</button>
+                <button id="submit">GET STARTED</button>
             </form>
         </section>
-        <section>
-            <video src="" id="video"></video>
+        <section id="features">
+            <div id="time" class="feature-block">
+                <img src="https://cdn0.iconfinder.com/data/icons/feather/96/clock-512.png" alt="" class="icon" id="icon-clock">
+                <div class="feature-desc">
+                    <h2>You don't need to wait</h2>
+                    <p>All the books in the world are one click away.</p>
+                </div>
+            </div>
+            <div id="cost" class="feature-block">
+                <img class="icon" id="icon-price" src="https://image.flaticon.com/icons/png/512/69/69881.png" alt="">
+                <div class="feature-desc">
+                    <h2>You only pay once a year</h2>
+                    <p>Depending on your tier, you only pay once a year for the platform.</p>
+                </div>
+            </div>
+            <div id="books" class="feature-block">
+                <img class="icon" id="icon-book" src="https://image.flaticon.com/icons/png/512/130/130304.png" alt="">
+                <div class="feature-desc">
+                    <h2>You can read everything</h2>
+                    <p>We made contact to all publishers from around the world to bring you every book written.</p>
+                </div>
+            </div>
         </section>
+        <section id="video">
+                a
+        </section>
+        <!--
+        <section id="prices">
+            <div class="price-block">
+                1
+            </div>
+            <div class="price-block">
+                2
+            </div>
+            <div class="price-block">
+                3
+            </div>
+        </section>
+        -->
     </div>
+
+
     <!-- 
-        User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.
+    User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the
+    landing page.
 
-        User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).
+    User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL:
+    https://www.freecodecamp.com/email-submit).
 
-        User Story #13: The navbar should always be at the top of the viewport.
-
-        User Story #14: My product landing page should have at least one media query.
-
-        User Story #15: My product landing page should utilize CSS flexbox at least once.
     -->
 </body>
 

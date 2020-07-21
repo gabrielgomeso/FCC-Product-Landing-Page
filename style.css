@@ -1,0 +1,137 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgray;
+}
+
+/* Header */
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background-color: #b30000;
+}
+
+#header img{
+    width: 64px;
+    height: 36px;
+}
+
+#header-img{
+    width: 86px;
+    height: 48px;
+    padding: 40px;
+}
+
+.nav-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 40px 0 40px;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+}
+
+.nav-link:hover{
+    transition: 1s ease;
+    color: black;
+    font-size: 20px;
+}
+
+/* Content */
+
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+/* Form */
+
+form{
+    padding-bottom: 50px;
+}
+
+#form-title{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    transform: scale(1.5);
+}
+
+#email{
+    width: 300px;
+    padding: 10px;
+}
+
+#submit{
+    display: block;
+    margin-top: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 1000;
+    font-size: larger;
+    text-align: center;
+    background-color: #b30000;
+    border-radius: 2px;
+    border: 0px;
+    color: white;
+    width: 100%;
+}
+
+/* Features */
+
+.feature-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+.feature-desc{
+    font-family: 'Raleway', sans-serif;
+    padding: 0 20px 0 50px;
+    line-height: 0.5; 
+}
+
+.icon{
+    width: 102px;
+    height: 102px;
+}
+
+/* Prices */
+
+#prices{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+/* Responsive */
+
+@media (max-width: 600px){
+    #header {
+        flex-direction: column;
+    }
+    .nav-link{
+        padding: 0 10px 0 10px;
+        font-size: 14px;
+    }
+    #form-title{
+        font-family: 'Raleway', sans-serif;
+        transform: scale(1.1);
+    }
+    #email{
+        width: 150px;
+    }
+}
