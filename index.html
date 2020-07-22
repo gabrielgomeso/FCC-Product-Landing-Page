@@ -13,20 +13,20 @@
 
 <body>
     <header id="header">
-        <img id="header-img" src="https://i.imgur.com/EfanhPr.png" alt="">
+        <img id="header-img" src="https://i.imgur.com/sUzOoQq.png" alt=""> <!-- https://i.imgur.com/ay6nLNr.png -->
 
         <nav id="nav-bar">
             <a href="#features" class="nav-link">Features</a>
-            <a href="#video" class="nav-link">How It Works</a>
+            <a href="#howitworks" class="nav-link">How It Works</a>
             <a href="#prices" class="nav-link">Pricing</a>
         </nav>
     </header>
     <div id="content">
         <section id="subscribe">
             <h1 id="form-title">A new away to read.</h1>
-            <form action="" id="form">
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
                 <input type="email" id="email" name="email" placeholder="Enter your email address">
-                <button id="submit">GET STARTED</button>
+                <input type="button" id="submit" value="GET STARTED">
             </form>
         </section>
         <section id="features">
@@ -34,7 +34,7 @@
                 <img src="https://cdn0.iconfinder.com/data/icons/feather/96/clock-512.png" alt="" class="icon" id="icon-clock">
                 <div class="feature-desc">
                     <h2>You don't need to wait</h2>
-                    <p>All the books in the world are one click away.</p>
+                    <p>All the books in the world are one click away. All you have to do is choose which one you want.</p>
                 </div>
             </div>
             <div id="cost" class="feature-block">
@@ -52,33 +52,63 @@
                 </div>
             </div>
         </section>
-        <section id="video">
-                a
+        <section id="howitworks">
+                <iframe id="video" width="420" height="315"
+                src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>  
         </section>
-        <!--
         <section id="prices">
             <div class="price-block">
-                1
+                <div class="price-title">
+                    <h2>BookStart</h2>
+                </div>
+                <div class="price-desc">
+                    <ul>
+                        <li class="li-price">$100</li>
+                        <li>Show</li>
+                        <li>Best books</li>
+                        <li>Such amount of books</li>
+                        <li>Books delivery</li>
+                    </ul>
+                    <button class="price-button">GET THIS</button>
+                </div>
             </div>
             <div class="price-block">
-                2
+                <div class="price-title">
+                    <h2>BookSilver</h2>
+                </div>
+                <div class="price-desc">
+                    <ul>
+                        <li class="li-price">$200</li>
+                        <li>Show</li>
+                        <li>Best books</li>
+                        <li>Such amount of books</li>
+                        <li>Books delivery</li>
+                    </ul>
+                    <button class="price-button">GET THIS</button>
+                </div>
             </div>
             <div class="price-block">
-                3
+                <div class="price-title">
+                    <h2>BookGold</h2>
+                </div>
+                <div class="price-desc">
+                    <ul>
+                        <li class="li-price">$300</li>
+                        <li>Show</li>
+                        <li>Best books</li>
+                        <li>Such amount of books</li>
+                        <li>Books delivery</li>
+                    </ul>
+                    <button class="price-button">GET THIS</button>
+                </div>
             </div>
         </section>
-        -->
+    
     </div>
-
-
-    <!-- 
-    User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the
-    landing page.
-
-    User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL:
-    https://www.freecodecamp.com/email-submit).
-
-    -->
+    <footer>
+        <p>Created by <a href="https://github.com/gabrielgomeso">Gabriel Gomes</a> for the FreeCodeCamp Product Landing Page challenge</p>
+    </footer>
 </body>
 
 </html>

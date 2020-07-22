@@ -5,7 +5,8 @@ html, body{
 }
 
 body{
-    background-color: lightgray;
+    background-color: #757575;
+    color: white;
 }
 
 /* Header */
@@ -15,20 +16,20 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: auto;
+    height: 100px;
     position: fixed;
     background-color: #b30000;
-}
-
-#header img{
-    width: 64px;
-    height: 36px;
+    z-index: 10;
 }
 
 #header-img{
-    width: 86px;
-    height: 48px;
-    padding: 40px;
+    max-width: 200px;
+}
+
+#header-img{
+    width: 100%;
+    height: auto;
+    padding-left: 20px;
 }
 
 .nav-link{
@@ -59,6 +60,9 @@ body{
 
 form{
     padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #form-title{
@@ -86,22 +90,22 @@ form{
     border: 0px;
     color: white;
     width: 100%;
+    cursor: pointer;
 }
 
 /* Features */
-
 .feature-block{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding: 20px;
+    padding: 20px 0 20px 0;
+
 }
 
 .feature-desc{
     font-family: 'Raleway', sans-serif;
     padding: 0 20px 0 50px;
-    line-height: 0.5; 
 }
 
 .icon{
@@ -109,19 +113,85 @@ form{
     height: 102px;
 }
 
+/* Video */
+
+#video{
+    border: 0;
+    padding: 100px 10px 10px 10px;
+    width: 600px;
+}
+
+@media (max-width: 400px){
+    #video{
+        width: 300px;
+    }
+}
+
 /* Prices */
 
 #prices{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
+
+.price-block{
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.price-title{
+    text-transform: uppercase;
+    background-color: #b30000;
+    padding: 5px;
+    margin: 0;
+}
+
+#prices ul{
+    list-style-type: none;
+    padding: 0 50px 0 50px;
+}
+
+#prices li{
+    padding: 5px;
+}
+
+.li-price{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.price-button{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    background-color: #b30000;
+    font-weight: 900;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    margin-top: 100px;
+    padding: 10px 10px 10px 10px;
+    background-color: lightslategray;
+}
+
 
 /* Responsive */
 
-@media (max-width: 600px){
+@media (max-width: 700px){
     #header {
         flex-direction: column;
+    }
+    #header-img{
+        max-width: 150px;
     }
     .nav-link{
         padding: 0 10px 0 10px;
@@ -132,6 +202,19 @@ form{
         transform: scale(1.1);
     }
     #email{
-        width: 150px;
+        width: 100%;
+    }
+    #features{
+        text-align: center;
+    }
+
+    .icon{
+        display: none;
+    }
+    #prices{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
     }
 }
